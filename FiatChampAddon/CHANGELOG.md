@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.0.16 - 2022-10-20
+- support for different brands. 
+- jeep should work out of the box
+- initial support for Ram Truck
+
 ## 2.0.15 - 2022-10-19
 - fix location sensor status.
 - zone (home, work etc.) support. car location sensor now shows correct zone as defined in home assistant if car is in the defined radius of the zone. 

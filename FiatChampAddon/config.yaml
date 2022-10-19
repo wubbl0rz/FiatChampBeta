@@ -3,7 +3,7 @@ url: "https://github.com/wubbl0rz/FiatChamp"
 description: "Connect your FIAT (uconnect) car to Home Assistant. 🚗"
 services:
     - "mqtt:want"
-version: "2.0.15"
+version: "2.0.16"
 homeassistant_api: true
 image: "ghcr.io/wubbl0rz/image-{arch}-fiat-champ"
 slug: "fiat_champ"
@@ -14,6 +14,7 @@ options:
   FiatUser: ""
   FiatPw: ""
   FiatPin: ""
+  Brand: "Fiat"
   RefreshInterval: 15
   ConvertKmToMiles: false
   Debug: false
@@ -25,6 +26,7 @@ schema:
   FiatUser: str
   FiatPw: password
   FiatPin: password?
+  Brand: list(Fiat|Ram|Jeep|Dodge)
   ConvertKmToMiles: bool
   RefreshInterval: int
   Debug: bool
