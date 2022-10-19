@@ -82,6 +82,6 @@ public class SimpleMqttClient
   
   public async Task Pub(string topic, string payload)
   {
-    await _mqttClient.EnqueueAsync(topic, payload);
+    await _mqttClient.EnqueueAsync(topic, payload, retain: true);
   }
 }
